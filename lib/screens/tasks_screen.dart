@@ -48,12 +48,24 @@ class TasksScreen extends StatelessWidget {
           ),
           Expanded(
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
                 ),
+              ),
+              child: ListView(
+                children: [
+                  ListTile(
+                    title: Text('Buy milk'),
+                    trailing: Checkbox(
+                      value: false,
+                      onChanged: (value) {},
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
